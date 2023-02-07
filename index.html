@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- #region Import Google Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- #endregion Import Google Fonts Roboto -->
+
+    <!-- Import fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Import icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <link rel="shortcut icon" href="./assets/chat.svg" />
+    <title>Template Chat</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- #region Header -->
+      <div id="user">
+        <div id="header">
+          <div id="user-info">
+            <img
+              src="https://randomuser.me/api/portraits/women/75.jpg"
+              alt="woman with long, dark brown hair and white skin"
+              class="image"
+            />
+            <div id="user-status">
+              <strong>Jennifer Lopez</strong>
+              <div class="status">Online</div>
+            </div>
+          </div>
+          <div id="close-chat"><i class="icon fa fa-solid fa-xmark"></i></div>
+        </div>
+      </div>
+      <!-- #endregion Header -->
+
+      <!-- #region Messages -->
+      <div class="messages">
+        <div class="last-seen">Today 11:30</div>
+        <div class="message">
+          <div class="message-date-stamp">Jennifer - 11:38</div>
+          <div class="message-body">I had an idea for an amazing project!</div>
+        </div>
+
+        <div class="message you">
+          <div class="message-date-stamp">You - 11:40</div>
+          <div class="message-body">Serious ?? Tell me more!</div>
+        </div>
+
+        <div class="message">
+          <div class="message-date-stamp">Jennifer - 11:45</div>
+          <div class="message-body">
+            What if we made a responsive chat in just one week?
+          </div>
+        </div>
+
+        <div class="message you">
+          <div class="message-date-stamp">You - 11:50</div>
+          <div class="message-body">it's a great idea</div>
+        </div>
+
+        <div class="message you">
+          <div class="message-date-stamp">You - 11:50</div>
+          <div class="message-body">I'm in !!</div>
+        </div>
+      </div>
+      <!-- #endregion Messages -->
+
+      <!-- #region Form -->
+      <form id="bottom" class="input-wrapper">
+        <input type="text" placeholder="Type your message" />
+        <button>
+          <i class="icon ph-paper-plane-right-fill"></i>
+        </button>
+      </form>
+      <!-- #endregion Form -->
+
+      <!-- Scroll to last index -->
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
